@@ -43,17 +43,31 @@
   z-index: 1;
 }
 .memes-slider__label{
-  padding: 5px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #fff;
   transition: transform 1s;
+  margin: -0.1vw;
 }
 .memes-slider__label:active {
   transform: scale(1.4);
   transition: transform 0.3s;
 }
+
+@media screen and (max-width: 800px) {
+  .memes-slider__radio-buttons {
+      justify-content: center;
+  }
+  .memes-slider__text {
+    margin: 10vw 0 0 0;
+  }
+  .memes-slider {
+    gap: 0;
+  }
+}
+
 @media (hover:hover) {
   .memes-slider__input:hover {
     cursor: pointer;
