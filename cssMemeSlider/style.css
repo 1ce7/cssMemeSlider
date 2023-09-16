@@ -1,6 +1,8 @@
 .body {
   padding: 5vw 20vw;
-  background-color: antiquewhite;
+  background: #fff;
+  color: #000;
+  font-size: 1.3rem;
 }
 .img {
   display: block;
@@ -22,7 +24,6 @@
   min-width: 60vw;
   height: 50vh;
 }
-
 .memes-slider__footer {
   display: flex;
   align-items: center;
@@ -46,8 +47,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: antiquewhite;
-  transition: transform .3s;
+  background: #fff;
+  transition: transform 1s;
+}
+.memes-slider__label:active {
+  transform: scale(1.4);
+  transition: transform 0.3s;
 }
 @media (hover:hover) {
   .memes-slider__input:hover {
@@ -57,12 +62,17 @@
     cursor: auto;
   }
   .memes-slider__label:hover {
-    transform: scale(1.3);
     cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.3s;
   }
   .memes-slider__label:has(.memes-slider__input:checked):hover {
     transform: scale(1);
     cursor: auto;
+  }
+  .memes-slider__label:active {
+  transform: scale(1.4);
+  transition: transform 0.3s;
   }
 }
 
