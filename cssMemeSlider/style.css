@@ -1,5 +1,5 @@
 .body {
-  padding: 5vw;
+  padding: 5vw 20vw;
   background-color: antiquewhite;
 }
 .img {
@@ -19,7 +19,7 @@
 
 }
 .memes-slider__image {
-  min-width: 90vw;
+  min-width: 60vw;
   height: 50vh;
 }
 
@@ -33,10 +33,10 @@
   transition: 1s;
 }
 .memes-slider__text {
-  min-width: 90vw;
+  min-width: 60vw;
 }
 .memes-slider__radio-buttons{
-  width: 90vw;
+  width: 60vw;
   display: flex;
   justify-content: end;
   z-index: 1;
@@ -49,19 +49,21 @@
   background: antiquewhite;
   transition: transform .3s;
 }
-.memes-slider__input:hover {
-  cursor: pointer;
-}
-.memes-slider__input:checked {
-  cursor: auto;
-}
-.memes-slider__label:hover {
-  transform: scale(1.3);
-  cursor: pointer;
-}
-.memes-slider__label:has(.memes-slider__input:checked):hover {
-  transform: scale(1);
-  cursor: auto;
+@media (hover:hover) {
+  .memes-slider__input:hover {
+    cursor: pointer;
+  }
+  .memes-slider__input:checked {
+    cursor: auto;
+  }
+  .memes-slider__label:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+  }
+  .memes-slider__label:has(.memes-slider__input:checked):hover {
+    transform: scale(1);
+    cursor: auto;
+  }
 }
 
 .memes-slider:has(#radio1:checked) > .memes-slider__images{
@@ -71,26 +73,26 @@
   transform: translateX(0);
 }
 .memes-slider:has(#radio2:checked) > .memes-slider__images{
-  transform: translateX(-90vw);
+  transform: translateX(-60vw);
 }
 .memes-slider:has(#radio2:checked) > .memes-slider__footer > .memes-slider__texts{
-  transform: translateX(-90vw);
+  transform: translateX(-60vw);
 }
 .memes-slider:has(#radio3:checked) > .memes-slider__images{
-  transform: translateX(-180vw);
+  transform: translateX(-120vw);
 }
 .memes-slider:has(#radio3:checked) > .memes-slider__footer > .memes-slider__texts{
-  transform: translateX(-180vw);
+  transform: translateX(-120vw);
 }
 .memes-slider:has(#radio4:checked) > .memes-slider__images{
-  transform: translateX(-270vw);
+  transform: translateX(-180vw);
 }
 .memes-slider:has(#radio4:checked) > .memes-slider__footer > .memes-slider__texts{
-  transform: translateX(-270vw);
+  transform: translateX(-180vw);
 }
 .memes-slider:has(#radio5:checked) > .memes-slider__images{
-  transform: translateX(-360vw);
+  transform: translateX(-240vw);
 }
 .memes-slider:has(#radio5:checked) > .memes-slider__footer > .memes-slider__texts{
-  transform: translateX(-360vw);
+  transform: translateX(-240vw);
 }
